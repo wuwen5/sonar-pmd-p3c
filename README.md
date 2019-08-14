@@ -30,3 +30,5 @@ PMD tool provides some rules that can check the code of JUnit tests. Please note
 ## License
 Licensed under the [GNU Lesser General Public License, Version 3.0](https://github.com/jensgerdes/sonar-pmd/blob/master/LICENSE.md)
 
+## 备注 
+在官方仓库tag中的3.2.1版本和alibaba/p3c的2.0.0版本

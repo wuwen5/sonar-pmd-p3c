@@ -1,0 +1,11 @@
+<p>禁止使用构造方法BigDecimal(double)的方式把double值转化为BigDecimal对象</p>
+<p>说明：BigDecimal(double)存在精度损失风险，在精确计算或值比较的场景中可能会导致业务逻辑异常。</p>
+<p>示例:</p>
+<h2>Negative example:</h2>
+<pre>
+    BigDecimal good1 = new BigDecimal(0.1);
+</pre>
+<h2>Positive example:</h2>
+    BigDecimal good1 = new BigDecimal("0.1");
+    BigDecimal good2 = BigDecimal.valueOf(0.1);
+</pre>
