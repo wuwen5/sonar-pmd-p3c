@@ -31,4 +31,9 @@ PMD tool provides some rules that can check the code of JUnit tests. Please note
 Licensed under the [GNU Lesser General Public License, Version 3.0](https://github.com/jensgerdes/sonar-pmd/blob/master/LICENSE.md)
 
 ## 备注 
-在官方仓库tag中的3.2.1版本和alibaba/p3c的2.0.0版本
+在官方仓库tag中的3.2.1版本和alibaba/p3c的2.0.0版本上开发。
+使用参考：
+1.  使用mvn clean package -DskipTests打包后将jar包上传到SonarQube extensions/plugins目录下后再重启SonarQube服务即可完成Sonar插件的部署
+2.  有管理员权限的账号登陆SonarQube后点击顶部菜单的“代码规则”，在页面中点击“资源库”，下方出现“PMD P3C Java 55”即代表插件没有问题。其中“Java”代表适用于Java语言，“55”代表有55条规则。
+3.  点击顶部菜单的“质量配置”页面“Java配置”，默认的“Sonar way”不支持修改，点击后面箭头的“复制”，然后在复制出的配置中将刚才的“PMD P3C”的55条规则添加到此配置中，然后将此配置激活设置成默认即可。
+4.  新分析的即可在SonarQube中查看到P3C的规则已经生效。
