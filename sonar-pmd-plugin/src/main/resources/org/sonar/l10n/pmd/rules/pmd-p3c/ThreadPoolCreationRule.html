@@ -25,16 +25,17 @@
 </pre>
 <h2>Positive example 3：</h2>
 <pre>
-    <bean id="userThreadPool"
-          class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
-        <property name="corePoolSize" value="10" />
-        <property name="maxPoolSize" value="100" />
-        <property name="queueCapacity" value="2000" />
-    <property name="threadFactory" value= threadFactory />
-        <property name="rejectedExecutionHandler">
-            <ref local="rejectedExecutionHandler" />
-        </property>
-    </bean>
+    <!-- HTML entities-->
+    &lt;bean id=&quot;userThreadPool&quot;
+          class=&quot;org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor&quot;&gt;
+        &lt;property name=&quot;corePoolSize&quot; value=&quot;10&quot; /&gt;
+        &lt;property name=&quot;maxPoolSize&quot; value=&quot;100&quot; /&gt;
+        &lt;property name=&quot;queueCapacity&quot; value=&quot;2000&quot; /&gt;
+    &lt;property name=&quot;threadFactory&quot; value= threadFactory /&gt;
+        &lt;property name=&quot;rejectedExecutionHandler&quot;&gt;
+            &lt;ref local=&quot;rejectedExecutionHandler&quot; /&gt;
+        &lt;/property&gt;
+    &lt;/bean&gt;
     //in code
     userThreadPool.execute(thread);
 </pre>
