@@ -1,0 +1,11 @@
+<p> long或者Long初始赋值时，必须使用大写的L，不能是小写的l，小写容易跟数字1混淆，造成误解。</p>
+<p>示例:</p>
+<h2>Negative example:</h2>
+<pre>
+    //It is hard to tell whether it is number 11 or Long 1.
+  Long warn = 1l;
+</pre>
+<h2>Positive example:</h2>
+<pre>
+    Long notwarn = 1L;
+</pre>

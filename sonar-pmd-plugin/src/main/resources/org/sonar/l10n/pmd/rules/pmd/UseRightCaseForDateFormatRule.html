@@ -1,0 +1,10 @@
+<p>日期格式化时，yyyy表示当天所在的年，而大写的YYYY代表是week in which year（JDK7之后引入的概念），意思是当天所在的周属于的年份，一周从周日开始，周六结束，只要本周跨年，返回的YYYY就是下一年。</p>
+<p>示例:</p>
+<h2>Negative example:</h2>
+<pre>
+    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+</pre>
+<h2>Positive example:</h2>
+<pre>
+    SimpleDateFormat format = new SimpleDateFormat("YYYY-mm-dd HH:mm:ss");
+</pre>
